@@ -99,3 +99,49 @@ h1 {
 #search-form button:hover {
   opacity: 0.9;
 }
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #222;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.detail-card {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.detail-card img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  display: block;
+}
+
+.detail-text {
+  padding: 1.5rem;
+}
+
+.detail-text h2 {
+  margin-top: 0;
+}
+
+.detail-text p {
+  line-height: 1.6;
+}
+
+.detail-no-image {
+  height: 500px;
+}

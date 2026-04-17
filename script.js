@@ -84,12 +84,14 @@ function renderArtworks(artworks, iiifUrl) {
       : `<div class="no-image">No Image Available</div>`;
 
     card.innerHTML = `
-      ${imageHtml}
-      <div class="card-content">
-        <h2>${artwork.title || "Untitled"}</h2>
-        <p><strong>Artist:</strong> ${artwork.artist_title || "Unknown artist"}</p>
-        <p><strong>Date:</strong> ${artwork.date_display || "Not available"}</p>
-      </div>
+      <a href="artwork.html?id=${artwork.id}" class="card-link">
+        ${imageHtml}
+        <div class="card-content">
+          <h2>${artwork.title || "Untitled"}</h2>
+          <p><strong>Artist:</strong> ${artwork.artist_title || "Unknown artist"}</p>
+          <p><strong>Date:</strong> ${artwork.date_display || "Not available"}</p>
+        </div>
+      </a>
     `;
 
     artGrid.appendChild(card);
