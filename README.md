@@ -4,11 +4,13 @@ Art Explorer is a small front-end web application built with HTML, CSS, and Java
 
 ## Features
 
-- View featured artworks on the homepage
+- Browse featured artworks on the homepage
 - Search artworks by artist name or artwork title
 - Open a detail page for each artwork
 - Navigate back to the gallery page
 - Handle missing or unavailable images gracefully
+- Responsive layout for desktop and mobile devices
+
 
 ## API Endpoints Used
 
