@@ -4,16 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Artwork Details</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <a href="index.html" class="back-link">← Back to Gallery</a>
-    <h1>Artwork Details</h1>
+  <header class="page-header">
+    <div class="container">
+      <a href="index.html" class="back-link">← Back to Gallery</a>
+      <h1 class="site-title">Artwork Details</h1>
+      <p id="detail-status-message" class="status-message" aria-live="polite"></p>
+    </div>
   </header>
 
-  <main id="artwork-detail">
-    <p id="detail-message">Loading artwork details...</p>
+  <main class="container">
+    <section id="artwork-detail" aria-label="Artwork details"></section>
   </main>
 
   <script src="artwork.js"></script>

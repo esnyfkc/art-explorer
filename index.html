@@ -4,27 +4,39 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Art Explorer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Art Explorer</h1>
-    <p>Browse artworks from the Art Institute of Chicago</p>
+  <header class="page-header">
+    <div class="container">
+      <h1 class="site-title">Art Explorer</h1>
+      <p class="site-description">
+        Browse artworks from the Art Institute of Chicago
+      </p>
 
-    <form id="search-form">
-      <input
-        type="text"
-        id="search-input"
-        placeholder="Search by artist or artwork title"
-      />
-      <button type="submit">Search</button>
-      <button type="button" id="reset-button">Show Featured</button>
-    </form>
+      <form id="search-form" class="search-form">
+        <label for="search-input" class="sr-only">Search artworks</label>
+        <input
+          id="search-input"
+          class="search-input"
+          type="text"
+          placeholder="Search by artist or artwork title"
+        />
+        <button type="submit" class="button button-primary">Search</button>
+        <button type="button" id="featured-button" class="button button-secondary">
+          Featured
+        </button>
+      </form>
+
+      <p id="status-message" class="status-message" aria-live="polite"></p>
+    </div>
   </header>
 
-  <main>
-    <section id="art-grid" class="grid"></section>
-    <p id="message"></p>
+  <main class="container">
+    <section id="art-grid" class="art-grid" aria-label="Artwork gallery"></section>
   </main>
 
   <script src="script.js"></script>
