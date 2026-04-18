@@ -2,6 +2,7 @@ const artGrid = document.getElementById("art-grid");
 const message = document.getElementById("message");
 const searchForm = document.getElementById("search-form");
 const searchInput = document.getElementById("search-input");
+const resetButton = document.getElementById("reset-button");
 
 async function loadArtworks() {
   try {
@@ -109,6 +110,13 @@ searchForm.addEventListener("submit", (event) => {
   }
 
   searchArtworks(query);
+}
+);
+
+resetButton.addEventListener("click", () => {
+  searchInput.value = "";
+  message.textContent = "";
+  loadArtworks();
 });
 
 loadArtworks();
