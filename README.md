@@ -4,7 +4,7 @@ Art Explorer is a front-end web application that allows users to explore artwork
 
 ## Features
 
-- Browse featured artworks on the homepage
+- Discover artworks on the homepage
 - Search artworks by artist name or artwork title
 - Open a detail page for each artwork
 - Navigate back to the gallery page
